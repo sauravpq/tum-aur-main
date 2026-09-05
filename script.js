@@ -103,8 +103,7 @@ progressBar.addEventListener("input", function () {
     }
 });
 
-function changeSong(direction) {
-    const wasPlaying = !audioPlayer.paused;
+function changeSong(direction, shouldPlay = !audioPlayer.paused) {
     currentSongIndex += direction;
 
     if (currentSongIndex < 0) {
@@ -117,7 +116,7 @@ function changeSong(direction) {
 
     loadSong(currentSongIndex);
 
-    if (wasPlaying) {
+    if (shouldPlay) {
         audioPlayer.play();
         albumCover.classList.add("playing");
         playButton.textContent = "Ⅱ";
@@ -135,6 +134,11 @@ prevButton.addEventListener("click", function () {
 nextButton.addEventListener("click", function () {
     changeSong(1);
 });
+
+audioPlayer.addEventListener("ended", function () {
+    changeSong(1, true);
+});
+
 const songs = [
     {
         title: "Be Intehaan full song | Tips Official",
