@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 AM Music</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1 class="hero-title">तुम और मैं</h1>
+    <div class="background"></div>
+    <div class="overlay"></div>
+    <div class="music-player">
+        <img class="album-cover" src="assets/album-art.png" >
+        <button class="play-button">▶</button>
+        <button class="next-button">⏭</button>
+        <button class="prev-button">⏮</button>
+        <input type="range" class="progress-bar" value="0" min="0" max="100">
+        <span   class="current-time">0:00</span>    
+    <span class="total-time">0:00</span>
+    <span class="song-title">Song Title</span>
+    <span class="artist-name">Artist Name</span>      
+    <input type="range" class="volume-slider" value="100" min="0" max="100">  
+    <span class="volume-icon">🔊</span>
+    
+        
+    </div>
+    
+    <audio id="audioPlayer" src="assets/song1.m4a"></audio>
+    <script src="script.js"></script>
+    
+
+</body>
+</html>
