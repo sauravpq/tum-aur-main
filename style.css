@@ -19,7 +19,7 @@ body {
     position: fixed;
     inset: 0;
     background-color: #f0f0f0;
-    background-image: url("./assets/background4.png");
+    background-image: url("./assets/background5.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -268,10 +268,10 @@ body {
 }
 .hero-title {
     position: absolute;
-    top: 30%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 120px;
+    font-size: 90px;
     font-family: 'Poppins', sans-serif;
     font-weight: 700;
     line-height: 1.2;
